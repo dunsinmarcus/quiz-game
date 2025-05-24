@@ -26,3 +26,17 @@ function showQuestion() {
   });
   startTimer();
 }
+
+function selectAnswer(selected, correct) {
+  stopTimer();
+  const feedback = document.getElementById('feedback');
+  if (selected === correct) {
+    score++;
+    feedback.textContent = 'Correct!';
+    feedback.style.color = 'green';
+  } else {
+    feedback.textContent = `Wrong! Correct answer: ${correct}`;
+    feedback.style.color = 'red';
+  }
+  document.getElementById('next-btn').style.display = 'block';
+}
