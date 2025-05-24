@@ -1,8 +1,13 @@
 const questions = [
   {
-    question: "What is the capital of France?",
-    options: ["Paris", "London", "Berlin", "Madrid"],
-    answer: "Paris"
+    question: "What is the capital of Nigeria?",
+    options: ["Paris", "Abuja", "Berlin", "Madrid"],
+    answer: "Abuja"
+  },
+  {
+    "question": "Who wrote Things Fall Apart?",
+    "options": ["Chinua Achebe", "Mark Twain", "Jane Austen", "J.K. Rowling"],
+    "answer": "Chinua Achebe"
   },
   {
     question: "Which planet is known as the Red Planet?",
