@@ -40,3 +40,19 @@ function selectAnswer(selected, correct) {
   }
   document.getElementById('next-btn').style.display = 'block';
 }
+
+document.getElementById('next-btn').addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex < questions.length) {
+    showQuestion();
+  } else {
+    showScore();
+  }
+});
+
+function showScore() {
+  document.querySelector('.quiz-container').innerHTML = `
+    <h2>Your Score: ${score}/${questions.length}</h2>
+    <button onclick="location.reload()">Play Again</button>
+  `;
+}
