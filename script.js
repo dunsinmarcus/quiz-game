@@ -56,3 +56,27 @@ function showScore() {
     <button onclick="location.reload()">Play Again</button>
   `;
 }
+
+function startTimer() {
+  timer = setInterval(() => {
+    timeLeft--;
+    document.getElementById('time').textContent = timeLeft;
+    if (timeLeft === 0) {
+      stopTimer();
+      selectAnswer(null, questions[currentIndex].answer);
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
+
+function resetState() {
+  clearInterval(timer);
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('options-container').innerHTML = '';
+  document.getElementById('next-btn').style.display = 'none';
+  timeLeft = 15;
+  document.getElementById('time').textContent = timeLeft;
+}
