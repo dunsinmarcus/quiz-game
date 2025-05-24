@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is the capital of Nigeria?",
+    "options": ["Berlin", "Abuja", "Paris", "Madrid"],
+    "answer": "Abuja"
+  },
+  {
+    "question": "Who wrote Things Fall Apart?",
+    "options": ["Chinua Achebe", "Mark Twain", "Jane Austen", "J.K. Rowling"],
+    "answer": "Chinua Achebe"
+  }
+]
